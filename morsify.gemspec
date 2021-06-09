@@ -21,11 +21,10 @@ Gem::Specification.new do |spec|
       'public gem pushes.'
   end
 
-  spec.executables = ['morsify']
+  spec.executables = []
   spec.require_paths = ['lib']
   spec.files = Dir.glob('{bin,lib,src,spec}/**/*') + %w[LICENSE README.md]
 
-  spec.required_ruby_version = Gem::Requirement.new('>= 2.7.0')
   spec.add_development_dependency 'bundler', '~> 2.1.2'
   spec.add_development_dependency 'pry', '~> 0.12.2'
   spec.add_development_dependency 'rake', '~> 13.0', '>= 13.0.1'
